@@ -106,7 +106,7 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
 
     def title(text):
         nonlocal y
-        ax_leg.text(xi, y, text, fontsize=12.5, fontweight="bold",
+        ax_leg.text(xi, y, text, fontsize=16, fontweight="bold",
                     va="top", color="#111111")
         y -= dh * 1.7
 
@@ -115,14 +115,14 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
         ax_leg.plot(xi + 0.07, y, marker, ms=ms, color=fc,
                     markeredgewidth=0.6, markeredgecolor=ec, zorder=5,
                     transform=ax_leg.transData, clip_on=False)
-        ax_leg.text(xt, y, label, va="center", fontsize=10.5, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
         y -= dh
 
     def row_line(label, lw, color):
         nonlocal y
         ax_leg.plot([xi, xi + 0.13], [y, y], lw=lw, color=color,
                     solid_capstyle="round")
-        ax_leg.text(xt, y, label, va="center", fontsize=10.5, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
         y -= dh
 
     def row_band(label, color):
@@ -131,17 +131,17 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
             (xi, y - 0.007), 0.13, 0.015,
             boxstyle="square,pad=0", fc=color, ec="none", alpha=0.85,
             transform=ax_leg.transData, clip_on=False))
-        ax_leg.text(xt, y, label, va="center", fontsize=10.5, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
         y -= dh
 
     def row_symbol(label, color):
         nonlocal y
         ax_leg.text(xi + 0.07, y, "①", ha="center", va="center",
-                    fontsize=9, color="white", fontweight="bold",
+                    fontsize=12, color="white", fontweight="bold",
                     bbox=dict(boxstyle="circle,pad=0.20", fc=color,
                               ec="white", lw=0.5),
                     transform=ax_leg.transData, clip_on=False)
-        ax_leg.text(xt, y, label, va="center", fontsize=10.5, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
         y -= dh
 
     def sep():
@@ -176,7 +176,7 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
             boxstyle="square,pad=0", fc=color, ec="none",
             transform=ax_leg.transData, clip_on=False))
         ax_leg.text(xt, y, f"{dom}  ({n:,} PDBs)",
-                    va="center", fontsize=10.5, color=color, fontweight="bold")
+                    va="center", fontsize=14, color=color, fontweight="bold")
         y -= dh
 
     sep()
@@ -201,7 +201,7 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
             row = phyla.loc[idx]
             color = DOMAIN_COLORS.get(row["domain"], "#9E9E9E")
             ax_leg.text(xi_c + 0.07, yy, str(num),
-                        ha="center", va="center", fontsize=8,
+                        ha="center", va="center", fontsize=11,
                         color="white", fontweight="bold",
                         bbox=dict(boxstyle="circle,pad=0.24",
                                   fc=color, ec="white", lw=0.5),
@@ -211,7 +211,7 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
                 name = name[:17] + "…"
             ax_leg.text(xt_c, yy,
                         f"{name}  ({int(row['n_pdbs']):,})",
-                        va="center", fontsize=10, color=color)
+                        va="center", fontsize=13, color=color)
             yy -= dh
         y_after = min(y_after, yy)
 
@@ -278,7 +278,7 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
         a = angles[i]
         if i in phylum_nums:
             ax.text(a, R_PHYLUM, str(phylum_nums[i]),
-                    ha="center", va="center", fontsize=7.5,
+                    ha="center", va="center", fontsize=12,
                     color="white", fontweight="bold", zorder=8,
                     bbox=dict(boxstyle="circle,pad=0.25",
                               fc=color, ec="white", lw=0.8))
@@ -305,14 +305,14 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
                 f"{n_pdbs_dom:,}",
                 ha="center", va="center", rotation=rot,
                 rotation_mode="anchor",
-                fontsize=9, fontweight="bold", color="white", zorder=5)
+                fontsize=14, fontweight="bold", color="white", zorder=5)
 
     ax.set_ylim(0, 1.35)
     ax.axis("off")
     ax.set_title(
         "Taxonomic Diversity of S40 Non-redundant CATH Structures\n"
         "NCBI hierarchy: Domain  >  Kingdom  >  Phylum",
-        fontsize=14, pad=18, color="#333333",
+        fontsize=20, pad=18, color="#333333",
     )
 
     # ---- painel de legenda ----
