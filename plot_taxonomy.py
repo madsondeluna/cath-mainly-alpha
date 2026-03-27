@@ -319,7 +319,7 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
     _draw_legend(ax_leg, phyla, phylum_nums)
 
     out = OUT_DIR / "taxonomy_cladogram.png"
-    plt.savefig(out, dpi=180, bbox_inches="tight", facecolor="white")
+    plt.savefig(out, dpi=700, bbox_inches="tight", facecolor="white")
     plt.close()
     print(f"Cladograma salvo: {out}")
 
@@ -379,7 +379,7 @@ def plot_treemap(phyla: pd.DataFrame) -> None:
     ax.axis("off")
 
     out = OUT_DIR / "taxonomy_treemap.png"
-    plt.savefig(out, dpi=200, bbox_inches="tight", facecolor="white")
+    plt.savefig(out, dpi=700, bbox_inches="tight", facecolor="white")
     plt.close()
     print(f"Treemap salvo: {out}")
 
