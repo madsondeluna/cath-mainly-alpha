@@ -11,10 +11,13 @@ plot_taxonomy.py
      Texto condicional por tamanho de celula; legenda fora do grafico
 
 Saidas:
-  data_exploration/taxonomy_cladogram.png
-  data_exploration/taxonomy_treemap.png
+  taxonomy/taxonomy_cladogram.png
+  taxonomy/taxonomy_treemap.png
+  data_exploration/imgs/taxonomy_cladogram.png  (copia para o README)
+  data_exploration/imgs/taxonomy_treemap.png    (copia para o README)
 """
 
+import shutil
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -23,7 +26,9 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import squarify
 
-OUT_DIR = Path("data_exploration")
+SCRIPT_DIR = Path(__file__).parent
+OUT_DIR    = SCRIPT_DIR
+IMG_DIR    = SCRIPT_DIR.parent / "data_exploration" / "imgs"
 
 DOMAIN_ORDER = ["Eukaryota", "Bacteria", "Archaea", "Viruses", "Unclassified"]
 DOMAIN_COLORS = {
@@ -321,6 +326,7 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
     out = OUT_DIR / "taxonomy_cladogram.png"
     plt.savefig(out, dpi=700, bbox_inches="tight", facecolor="white")
     plt.close()
+    shutil.copy(out, IMG_DIR / out.name)
     print(f"Cladograma salvo: {out}")
 
 
@@ -381,6 +387,7 @@ def plot_treemap(phyla: pd.DataFrame) -> None:
     out = OUT_DIR / "taxonomy_treemap.png"
     plt.savefig(out, dpi=700, bbox_inches="tight", facecolor="white")
     plt.close()
+    shutil.copy(out, IMG_DIR / out.name)
     print(f"Treemap salvo: {out}")
 
 

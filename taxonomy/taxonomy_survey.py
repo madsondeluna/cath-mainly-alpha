@@ -7,9 +7,9 @@ Parseia headers PDB locais (registros SOURCE) para extrair ORGANISM_TAXID, ORGAN
 Para PDBs antigos sem ORGANISM_TAXID, tenta anotar via NCBI Entrez API (busca por nome).
 
 Saidas:
-  data_exploration/taxonomy_survey.csv      -- registro por (pdb_id, tax_id, organismo)
-  data_exploration/taxonomy_summary.csv     -- contagem de PDBs por taxon
-  data_exploration/taxonomy_no_taxid.csv    -- PDBs que ainda ficaram sem taxid apos anotacao
+  taxonomy/taxonomy_survey.csv      -- registro por (pdb_id, tax_id, organismo)
+  taxonomy/taxonomy_summary.csv     -- contagem de PDBs por taxon
+  taxonomy/taxonomy_no_taxid.csv    -- PDBs que ainda ficaram sem taxid apos anotacao
 """
 
 import re
@@ -24,8 +24,9 @@ from tqdm import tqdm
 # ---------------------------------------------------------------------------
 # Configuracao
 # ---------------------------------------------------------------------------
-STRUCTURES_DIR = Path("structures")
-OUT_DIR = Path("data_exploration")
+SCRIPT_DIR     = Path(__file__).parent
+STRUCTURES_DIR = SCRIPT_DIR.parent / "structures"
+OUT_DIR        = SCRIPT_DIR
 
 OUT_SURVEY = OUT_DIR / "taxonomy_survey.csv"
 OUT_SUMMARY = OUT_DIR / "taxonomy_summary.csv"
