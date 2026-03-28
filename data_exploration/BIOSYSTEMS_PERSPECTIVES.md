@@ -8,15 +8,17 @@
 
 ---
 
-# The Alpha-Helix at the Crossroads of Prebiotic Chemistry and Molecular Evolution: Open Questions, Emerging Tools, and a Research Agenda
+# The Prebiotic Roots of Alpha-Helical Dominance: A Structural Bioinformatics Perspective on Protein Origins
 
-**Authors:** [Author 1]^1, [Author 2]^2, ...
+**Authors:** Madson A. de Luna-Aragao^1, Joao P. Bezerra Neto^4, Denys E. da Silva Santos^3, Ana M. Benko-Iseppon^2
 
 **Affiliations:**
-- ^1 [Institution], [City], [Country]
-- ^2 [Institution], [City], [Country]
+- ^1 Instituto de Ciencias Biologicas, Universidade Federal de Minas Gerais, Belo Horizonte, Brazil
+- ^2 Departamento de Genetica, Universidade Federal de Pernambuco, Recife, Brazil
+- ^3 Departamento de Quimica Fundamental, Universidade Federal de Pernambuco, Recife, Brazil
+- ^4 Instituto de Ciencias Biologicas, Universidade de Pernambuco, Recife, Brazil
 
-**Corresponding author:** [Name], [email]
+**Corresponding author:** Madson A. de Luna-Aragao, [email]
 
 ---
 
