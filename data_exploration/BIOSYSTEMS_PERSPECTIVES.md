@@ -1,22 +1,25 @@
-> **Journal:** BioSystems (Elsevier)
-> **ISSN:** 0303-2647
-> **CiteScore:** 4.0 | **Impact Factor:** 1.9
-> **Article type:** Perspectives
-> **Open Access APC:** USD 3,050 (optional)
-> **Submission portal:** [https://www.editorialmanager.com/biosystems](https://www.editorialmanager.com/biosystems)
-> **Guide for Authors:** [https://www.sciencedirect.com/science/journal/03032647/publish/guide-for-authors](https://www.sciencedirect.com/science/journal/03032647/publish/guide-for-authors)
+| | |
+|:---|:---|
+| **Journal** | BioSystems (Elsevier) |
+| **ISSN** | 0303-2647 |
+| **CiteScore** | 4.0 |
+| **Impact Factor** | 1.9 |
+| **Article type** | Perspectives |
+| **Open Access APC** | USD 3,050 (optional) |
+| **Submission portal** | [https://www.editorialmanager.com/biosystems](https://www.editorialmanager.com/biosystems) |
+| **Guide for Authors** | [https://www.sciencedirect.com/science/journal/03032647/publish/guide-for-authors](https://www.sciencedirect.com/science/journal/03032647/publish/guide-for-authors) |
 
 ---
 
 # The Prebiotic Roots of Alpha-Helical Dominance: A Structural Bioinformatics Perspective on Protein Origins
 
-**Authors:** Madson A. de Luna-Aragao^1, Joao P. Bezerra Neto^4, Denys E. da Silva Santos^3, Ana M. Benko-Iseppon^2
+**Authors:** Madson A. de Luna-Aragao<sup>1</sup>, Joao P. Bezerra Neto<sup>4</sup>, Denys E. da Silva Santos<sup>3</sup>, Ana M. Benko-Iseppon<sup>2</sup>
 
 **Affiliations:**
-- ^1 Instituto de Ciencias Biologicas, Universidade Federal de Minas Gerais, Belo Horizonte, Brazil
-- ^2 Departamento de Genetica, Universidade Federal de Pernambuco, Recife, Brazil
-- ^3 Departamento de Quimica Fundamental, Universidade Federal de Pernambuco, Recife, Brazil
-- ^4 Instituto de Ciencias Biologicas, Universidade de Pernambuco, Recife, Brazil
+- <sup>1</sup> Instituto de Ciencias Biologicas, Universidade Federal de Minas Gerais, Belo Horizonte, Brazil
+- <sup>2</sup> Departamento de Genetica, Universidade Federal de Pernambuco, Recife, Brazil
+- <sup>3</sup> Departamento de Quimica Fundamental, Universidade Federal de Pernambuco, Recife, Brazil
+- <sup>4</sup> Instituto de Ciencias Biologicas, Universidade de Pernambuco, Recife, Brazil
 
 **Corresponding authors:** Madson A. de Luna-Aragao, madsondeluna@ufmg.br; Ana M. Benko-Iseppon, ana.iseppon@ufpe.br
 
