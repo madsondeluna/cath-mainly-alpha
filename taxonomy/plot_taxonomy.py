@@ -327,7 +327,7 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
     out_web = IMG_DIR / "taxonomy_cladogram.png"
     plt.savefig(out_png, dpi=1000, bbox_inches="tight", facecolor="white", pad_inches=0.5)
     plt.savefig(out_svg, dpi=300,  bbox_inches="tight", facecolor="white", pad_inches=0.5)
-    plt.savefig(out_web, dpi=150,  bbox_inches="tight", facecolor="white", pad_inches=0.5)
+    plt.savefig(out_web, dpi=100,  bbox_inches="tight", facecolor="white", pad_inches=0.5)
     plt.close()
     print(f"Cladograma salvo: {out_png}")
     print(f"Cladograma salvo: {out_svg}")
