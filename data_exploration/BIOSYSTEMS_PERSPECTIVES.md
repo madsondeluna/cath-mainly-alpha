@@ -1,6 +1,5 @@
-| | |
-|:---|:---|
 | **Journal** | BioSystems (Elsevier) |
+|:---|:---|
 | **ISSN** | 0303-2647 |
 | **CiteScore** | 4.0 |
 | **Impact Factor** | 1.9 |
