@@ -99,20 +99,20 @@ def assign_angles(phyla: pd.DataFrame) -> np.ndarray:
 
 def _draw_legend(ax_leg, phyla, phylum_nums):
     """Painel lateral: explicacao dos elementos + lista de filos numerados."""
-    ax_leg.set_xlim(0, 1)
+    ax_leg.set_xlim(0, 1.1)
     ax_leg.set_ylim(0, 1)
     ax_leg.axis("off")
 
     y   = 0.98
     dh  = 0.036   # espaco entre linhas
-    xi  = 0.05    # x do icone
-    xt  = 0.22    # x do texto
+    xi  = 0.07    # x do icone
+    xt  = 0.25    # x do texto
     GRAY = "#444444"
 
     def title(text):
         nonlocal y
-        ax_leg.text(xi, y, text, fontsize=16, fontweight="bold",
-                    va="top", color="#111111")
+        ax_leg.text(0.55, y, text, fontsize=20, fontweight="bold",
+                    va="top", color="#111111", ha="center")
         y -= dh * 1.7
 
     def row_marker(label, marker, ms, fc, ec="white"):
@@ -120,14 +120,14 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
         ax_leg.plot(xi + 0.07, y, marker, ms=ms, color=fc,
                     markeredgewidth=0.6, markeredgecolor=ec, zorder=5,
                     transform=ax_leg.transData, clip_on=False)
-        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=18, color=GRAY)
         y -= dh
 
     def row_line(label, lw, color):
         nonlocal y
         ax_leg.plot([xi, xi + 0.13], [y, y], lw=lw, color=color,
                     solid_capstyle="round")
-        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=18, color=GRAY)
         y -= dh
 
     def row_band(label, color):
@@ -136,24 +136,22 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
             (xi, y - 0.007), 0.13, 0.015,
             boxstyle="square,pad=0", fc=color, ec="none", alpha=0.85,
             transform=ax_leg.transData, clip_on=False))
-        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=18, color=GRAY)
         y -= dh
 
     def row_symbol(label, color):
         nonlocal y
         ax_leg.text(xi + 0.07, y, "①", ha="center", va="center",
-                    fontsize=12, color="white", fontweight="bold",
+                    fontsize=16, color="white", fontweight="bold",
                     bbox=dict(boxstyle="circle,pad=0.20", fc=color,
                               ec="white", lw=0.5),
                     transform=ax_leg.transData, clip_on=False)
-        ax_leg.text(xt, y, label, va="center", fontsize=14, color=GRAY)
+        ax_leg.text(xt, y, label, va="center", fontsize=18, color=GRAY)
         y -= dh
 
     def sep():
         nonlocal y
-        y -= dh * 0.4
-        ax_leg.axhline(y, xmin=0.02, xmax=0.98, lw=0.5, color="#dddddd")
-        y -= dh * 0.6
+        y -= dh * 1.0
 
     # ---- Elementos ----
     title("Elements")
@@ -181,7 +179,7 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
             boxstyle="square,pad=0", fc=color, ec="none",
             transform=ax_leg.transData, clip_on=False))
         ax_leg.text(xt, y, f"{dom}  ({n:,} PDBs)",
-                    va="center", fontsize=14, color=color, fontweight="bold")
+                    va="center", fontsize=18, color=color, fontweight="bold")
         y -= dh
 
     sep()
@@ -205,18 +203,19 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
         for idx, num in items:
             row = phyla.loc[idx]
             color = DOMAIN_COLORS.get(row["domain"], "#9E9E9E")
+            ax_leg.plot(xi_c + 0.07, yy, "o", color=color, ms=22,
+                        markeredgewidth=0.5, markeredgecolor="white",
+                        zorder=4, clip_on=False)
             ax_leg.text(xi_c + 0.07, yy, str(num),
-                        ha="center", va="center", fontsize=11,
+                        ha="center", va="center", fontsize=14,
                         color="white", fontweight="bold",
-                        bbox=dict(boxstyle="circle,pad=0.24",
-                                  fc=color, ec="white", lw=0.5),
-                        transform=ax_leg.transData, clip_on=False)
+                        transform=ax_leg.transData, clip_on=False, zorder=5)
             name = row["phylum"]
-            if len(name) > 18:
-                name = name[:17] + "…"
+            if len(name) > 14:
+                name = name[:13] + "…"
             ax_leg.text(xt_c, yy,
                         f"{name}  ({int(row['n_pdbs']):,})",
-                        va="center", fontsize=13, color=color)
+                        va="center", fontsize=17, color=color)
             yy -= dh
         y_after = min(y_after, yy)
 
@@ -226,7 +225,7 @@ def _draw_legend(ax_leg, phyla, phylum_nums):
 
 def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
     # Figura two-panel: cladograma (esq) + legenda (dir)
-    fig = plt.figure(figsize=(32, 20))
+    fig = plt.figure(figsize=(36, 22))
     gs  = fig.add_gridspec(1, 2, width_ratios=[2.0, 1.0], wspace=0.0)
     ax      = fig.add_subplot(gs[0], projection="polar")
     ax_leg  = fig.add_subplot(gs[1])
@@ -253,7 +252,7 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
             ax.plot([a, a], [R_KINGDOM, R_PHYLUM],
                     color=color, lw=0.7, alpha=0.45, zorder=2)
         _arc(ax, R_KINGDOM, a_min, a_max, color, lw=1.4)
-        ax.plot((a_min + a_max) / 2, R_KINGDOM, "o", color=color, ms=5.5,
+        ax.plot((a_min + a_max) / 2, R_KINGDOM, "o", color=color, ms=7,
                 markeredgewidth=0.5, markeredgecolor="white", zorder=6)
 
     # ---- ramos reino -> dominio ----
@@ -270,25 +269,25 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
                     color=color, lw=1.5, alpha=0.7, zorder=2)
         _arc(ax, R_DOMAIN, a_min, a_max, color, lw=2.5)
         d_ang = (a_min + a_max) / 2
-        ax.plot(d_ang, R_DOMAIN, "D", color=color, ms=10,
+        ax.plot(d_ang, R_DOMAIN, "D", color=color, ms=13,
                 markeredgewidth=0.8, markeredgecolor="white", zorder=7)
         ax.plot([d_ang, d_ang], [0.04, R_DOMAIN], color=color, lw=2.5, zorder=2)
 
     # ---- raiz ----
-    ax.plot(0, 0, "o", color="#111111", ms=12, zorder=10)
+    ax.plot(0, 0, "o", color="#111111", ms=16, zorder=10)
 
     # ---- folhas: ponto simples ou simbolo numerado ----
     for i, row in phyla.iterrows():
         color = DOMAIN_COLORS.get(row["domain"], "#9E9E9E")
         a = angles[i]
         if i in phylum_nums:
+            ax.plot(a, R_PHYLUM, "o", color=color, ms=28,
+                    markeredgewidth=0.8, markeredgecolor="white", zorder=7)
             ax.text(a, R_PHYLUM, str(phylum_nums[i]),
-                    ha="center", va="center", fontsize=12,
-                    color="white", fontweight="bold", zorder=8,
-                    bbox=dict(boxstyle="circle,pad=0.25",
-                              fc=color, ec="white", lw=0.8))
+                    ha="center", va="center", fontsize=16,
+                    color="white", fontweight="bold", zorder=8)
         else:
-            ax.plot(a, R_PHYLUM, "o", color=color, ms=3.5,
+            ax.plot(a, R_PHYLUM, "o", color=color, ms=4.5,
                     markeredgewidth=0.4, markeredgecolor="white", zorder=5)
 
     # ---- anel de dominio com contagem em branco ----
@@ -310,24 +309,27 @@ def plot_cladogram(phyla: pd.DataFrame, angles: np.ndarray) -> None:
                 f"{n_pdbs_dom:,}",
                 ha="center", va="center", rotation=rot,
                 rotation_mode="anchor",
-                fontsize=14, fontweight="bold", color="white", zorder=5)
+                fontsize=18, fontweight="bold", color="white", zorder=5)
 
     ax.set_ylim(0, 1.35)
     ax.axis("off")
     ax.set_title(
         "Taxonomic Diversity of S40 Non-redundant CATH Structures\n"
         "NCBI hierarchy: Domain  >  Kingdom  >  Phylum",
-        fontsize=20, pad=18, color="#333333",
+        fontsize=26, pad=18, color="#333333",
     )
 
     # ---- painel de legenda ----
     _draw_legend(ax_leg, phyla, phylum_nums)
 
-    out = OUT_DIR / "taxonomy_cladogram.png"
-    plt.savefig(out, dpi=700, bbox_inches="tight", facecolor="white")
+    out_png = OUT_DIR / "taxonomy_cladogram.png"
+    out_svg = OUT_DIR / "taxonomy_cladogram.svg"
+    plt.savefig(out_png, dpi=1000, bbox_inches="tight", facecolor="white", pad_inches=0.5)
+    plt.savefig(out_svg, dpi=300, bbox_inches="tight", facecolor="white", pad_inches=0.5)
     plt.close()
-    shutil.copy(out, IMG_DIR / out.name)
-    print(f"Cladograma salvo: {out}")
+    shutil.copy(out_png, IMG_DIR / out_png.name)
+    print(f"Cladograma salvo: {out_png}")
+    print(f"Cladograma salvo: {out_svg}")
 
 
 # ---------------------------------------------------------------------------
