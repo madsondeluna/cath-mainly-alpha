@@ -1,16 +1,17 @@
 **Tentative titles:**
 
-1. The Alpha-Helix as a Primordial Fossil: Prebiotic Amino Acid Bias and the Deterministic Rise of Alpha-Helical Architecture
-2. Prebiotic Chemistry as Structural Destiny: Alanine and Leucine Bias Encoded in the Alpha-Helical Proteome
-3. Frozen in Fold Space: A Prebiotic Amino Acid Signature Persists Across the Alpha-Helical Proteome
+1. The Alpha-Helix as an Evolutionary Signature: Prebiotic Amino Acid Bias and the Physicochemical Basis of Alpha-Helical Architecture
+2. Prebiotic Chemistry and Structural Persistence: Alanine and Leucine Bias Across the Alpha-Helical Proteome
+3. A Prebiotic Amino Acid Signature Persists Across the Alpha-Helical Proteome: Compositional Evidence from the CATH S40 Dataset
 
 ---
 
 ## Abstract (SBBE26, ~250 words)
 
 The evolutionary origin of α-helical dominance in modern proteomes remains unresolved.
-We tested whether the amino acid composition of α-helices reflects physicochemical
-constraints predating Darwinian selection. From the CATH database (v4.3; 126,178
+We investigated whether the amino acid composition of α-helices retains a signature of
+physicochemical constraints that may have shaped early helical peptides prior to the
+establishment of modern Darwinian selection pressures. From the CATH database (v4.3; 126,178
 mainly-α and 305,361 α-β domains), the S40 threshold (40% pairwise identity) yielded
 8,056 class 1 representatives, of which 7,997 passed crystallographic quality criteria
 (resolution ≤ 3.0 Å, R-factor ≤ 0.25). A unified DSSP pipeline annotated 117,665
@@ -38,11 +39,16 @@ spanning 4 domains of life, 17 kingdoms, 74 phyla, and 1,655 unique taxa, confir
 that the reported compositional pattern is not taxonomically restricted but is
 reproducible across the full depth of the sampled tree of life.
 
-These data suggest that modern α-helical composition retains a measurable prebiotic
-signature across billions of years of molecular evolution. Understanding the
-physicochemical logic that shaped the earliest protein folds is an open question with
-direct implications for reconstructing the molecular events at the origin of life and
-interpreting the deep conservation of structural motifs across all domains of life.
+These data suggest that modern α-helical composition retains a measurable signature of
+prebiotic physicochemical preferences, persisting across billions of years of molecular
+evolution. Helices are the dominant structural element in several classes of proteins
+essential for life maintenance, including antimicrobial peptides, transcription factors,
+and ion channels, and their thermodynamic stability, determined primarily by backbone
+hydrogen bond geometry and amino acid sequence, makes them plausible candidates for early
+functional peptides. Understanding how physicochemical constraints and evolutionary forces
+jointly shaped helical composition is an open question with direct implications for
+reconstructing the molecular events at the origin of life and interpreting the deep
+conservation of structural motifs across all domains of life.
 
 ---
 
@@ -96,16 +102,16 @@ confirms that the reported compositional findings are not confined to any partic
 lineage and are reproducible across the full depth of the tree of life sampled in the
 CATH S40 dataset.
 
-Taken together, these data suggest that the compositional signature of the α-helix
-in modern proteins is substantially consistent with physicochemical constraints operative
-in the prebiotic world, prior to the emergence of a ribosomal translation system. Whether
-this pattern reflects a direct inheritance from early peptide chemistry, a convergent
-outcome of independent physicochemical filtering, or a combination of both remains an open
-question. These findings underscore the importance of revisiting the evolutionary origins
-of primordial protein architectures: understanding how the first folded structures arose,
-and what chemical logic shaped their composition, may be essential for reconstructing the
-molecular events at the origin of life and for interpreting the deep conservation of
-structural motifs across all domains of life.
+Taken together, these data suggest that the compositional signature of the α-helix in
+modern proteins is substantially consistent with physicochemical constraints that may have
+operated in early peptide chemistry, alongside the evolutionary forces that have shaped
+modern proteomes. Whether this pattern reflects direct inheritance from early prebiotic
+chemistry, convergent physicochemical filtering across independent lineages, or a
+combination of both remains an open question. These findings underscore the importance of
+examining the evolutionary origins of protein architectures: understanding how
+physicochemical constraints and selection jointly shaped the first folded structures may
+be essential for reconstructing the molecular events at the origin of life and for
+interpreting the deep conservation of structural motifs across all domains of life.
 
 ---
 
@@ -113,22 +119,33 @@ structural motifs across all domains of life.
 
 The protein structural universe is dominated by a small number of recurring architectural
 motifs, of which the α-helix is the most fundamental. Across all known proteomes,
-α-helical secondary structures account for approximately 32% of all residues in
-solved structures, and the "all-α" and "α/β" CATH classes together represent
-the majority of known domain folds. The evolutionary and mechanistic origins of this
-dominance, however, remain an open question at the intersection of structural biology,
-evolutionary biochemistry, and the origins of life.
+α-helical secondary structures account for approximately 32% of all residues in solved
+structures, and the "all-α" and "α/β" CATH classes together represent the majority of
+known domain folds. Many protein families essential for cellular life are predominantly
+or exclusively helical, including antimicrobial peptides (AMPs), transcription factors
+(TFs), and ion channels, suggesting a deep functional link between helical architecture
+and core biological processes. From a thermodynamic perspective, α-helices are also
+among the most readily formed secondary structures: their stability depends primarily on
+the amino acid sequence and the intrinsic backbone hydrogen bond geometry, without
+requiring long-range tertiary contacts, making them plausible as early structural units
+in prebiotic peptide chemistry. The evolutionary and mechanistic origins of α-helical
+dominance remain an open question at the intersection of structural biology, evolutionary
+biochemistry, and the origins of life.
 
-Two broad interpretive frameworks exist. The first, the contingency model, posits that
-the modern distribution of secondary structures reflects the outcome of billions of years
-of Darwinian selection acting on a random initial exploration of sequence space. Under
-this view, the α-helix is prevalent because evolution happened to sample it frequently
-and retain it for functional reasons. The second framework, the determinism model, argues
-that the modern distribution was largely predetermined by the physical chemistry of the
-earliest available amino acids, the geometry of the polypeptide backbone, and the
-constraints imposed by primitive membrane-like environments. The α-helix would then
-be dominant not because evolution chose it, but because the prebiotic chemical world
-made it inevitable.
+Two broad interpretive frameworks have been discussed in the literature. The first, the
+contingency model, posits that the modern distribution of secondary structures primarily
+reflects the outcome of billions of years of Darwinian selection acting on a broad
+exploration of sequence space. Under this view, the α-helix is prevalent because
+evolution repeatedly sampled and retained it for functional reasons. The second framework,
+the physicochemical constraint model, argues that the modern distribution was substantially
+influenced by the physical chemistry of the earliest available amino acids, the geometry
+of the polypeptide backbone, and the constraints imposed by primitive environments. Under
+this view, the prebiotic amino acid inventory was not neutral with respect to secondary
+structure: residues most readily synthesized abiotically happen to carry high intrinsic
+helical propensity, which would have biased early peptides toward helical conformations.
+These frameworks are not mutually exclusive, and the data presented here are interpreted
+in terms of the extent to which a prebiotic physicochemical signal remains detectable in
+modern proteins alongside the evolutionary record.
 
 The prebiotic amino acid inventory, as reconstructed from Miller-Urey-type spark discharge
 experiments, meteoritic analyses (Murchison, Murray), and hydrothermal vent syntheses,
@@ -142,14 +159,14 @@ peptides were assembled primarily from this restricted toolkit, helical structur
 have been statistically over-represented simply because the available building blocks
 preferred the helical backbone geometry.
 
-Here we provide a quantitative structural analysis designed to test this hypothesis. We
+Here we provide a quantitative structural analysis designed to explore this question. We
 analyze the amino acid composition of helical regions across the CATH S40 non-redundant
-mainly-α protein dataset, compare helical frequencies against modern proteome
-reference values, evaluate codon degeneracy patterns, and characterize compositional
-distributions across helix types, lengths, and terminal positions. We interpret these
-results in the context of the prebiotic fossil hypothesis and assess the extent to which
-modern helical composition is consistent with a physicochemically constrained, rather
-than evolutionarily contingent, origin.
+mainly-α protein dataset, compare helical frequencies against modern proteome reference
+values, evaluate codon degeneracy patterns, and characterize compositional distributions
+across helix types, lengths, and terminal positions. We interpret these results in the
+context of prebiotic amino acid chemistry and assess the extent to which modern helical
+composition retains a physicochemical signature consistent with early peptide constraints,
+while acknowledging the role of evolutionary processes in shaping modern proteins.
 
 ---
 
@@ -320,9 +337,9 @@ and Proline (0.451), both excluded from helical geometry by first principles: ba
 dihedral constraints for Glycine and backbone hydrogen bond geometry for Proline. In
 the lower panel of Figure 2, the scatter of observed vs. total frequency confirms that
 A and L lie consistently above the equal-frequency diagonal, while G and P fall below
-it. This bifurcation within the prebiotic amino acid set is mechanistically predicted
-and constitutes direct evidence that prebiotic amino acid chemistry constrained helical
-composition from the outset.
+it. This bifurcation within the prebiotic amino acid set is mechanistically predicted and is
+consistent with the hypothesis that prebiotic amino acid chemistry influenced helical
+composition from early on in the evolution of protein structure.
 
 ---
 
@@ -394,10 +411,11 @@ points), Isoleucine (+3.16), Valine (+3.16), and Alanine (+2.76) are enriched in
 with their known roles at helix boundaries and cap positions. The direct scatter
 comparison (right panel, Figure 5) makes this bifurcation visually explicit: enriched
 residues (blue) cluster above the equal-frequency diagonal, depleted residues (orange)
-below it. This pattern reveals an internal division of labor within the prebiotic amino
-acid set: some prebiotic residues (A, L, I, V) build α-helical bodies, while others
-(P, D, S, G) mark their structural boundaries. This division is mechanistically
-dictated, not evolved.
+below it. This pattern reveals an internal division of labor within the prebiotic amino acid set:
+some prebiotic residues (A, L, I, V) build α-helical bodies, while others (P, D, S, G)
+mark their structural boundaries. This division is consistent with mechanistic
+physicochemical constraints on backbone geometry rather than with position-specific
+evolutionary optimization alone.
 
 ---
 
@@ -462,11 +480,11 @@ As shown in Figure 9, the average amino acid composition projected onto the heli
 wheel (100° per residue periodicity) reveals a partial hydrophobic sector enrichment in
 the arc corresponding to the buried face of the helix. Alanine and Leucine contribute
 disproportionately to this sector, consistent with their role as hydrophobic
-core-packing residues identified in Figures 2 and 4. The relative enrichment of
-prebiotic aliphatic residues in the core-facing arc is consistent across the full
-7,997-structure dataset, supporting the model of these residues as structural anchors
-whose placement is determined by physical exclusion from the aqueous environment rather
-than by evolved sequence specificity.
+core-packing residues identified in Figures 2 and 4. The relative enrichment of prebiotic aliphatic residues in the core-facing arc is
+consistent across the full 7,997-structure dataset, supporting a model in which these
+residues act as structural anchors whose placement reflects both physical exclusion from
+the aqueous environment and the evolutionary retention of a thermodynamically favorable
+composition.
 
 ---
 
@@ -481,12 +499,11 @@ As shown in Figure 10, the distribution of Eisenberg hydrophobic moments (μH) a
 beyond 0.50. The modal population (low μH) corresponds to weakly amphipathic helices in
 globular contexts where hydrophobic residues are not strongly periodically distributed.
 The high-μH tail (μH > 0.40) corresponds to strongly amphipathic helices consistent
-with membrane-interfacial or helix-bundle packing contexts. If early peptides
-functioned at prebiotic membrane interfaces, as proposed by lipid-world and
-membrane-first origin models, amphipathic helices with high μH would have been the
-primary functional unit, and the prebiotic preference for Ala and Leu (Figures 2 and 4)
-would have been directly selected by the physical chemistry of the lipid-water
-interface.
+with membrane-interfacial or helix-bundle packing contexts. If early peptides functioned at prebiotic membrane interfaces, as proposed by lipid-world
+and membrane-first origin models, amphipathic helices with high μH would have been among
+the primary functional units, and the observed enrichment of Ala and Leu in helices
+(Figures 2 and 4) is consistent with physicochemical selection at lipid-water interfaces
+even in the absence of a complete genetic apparatus.
 
 ---
 
@@ -511,13 +528,14 @@ strongly enriched residue at all C-cap positions (z ≈ +2.9 at C1) is consisten
 Lysine, reflecting electrostatic interactions at the negative helix macrodipole terminus,
 while hydrophobic capping contributions are also visible for Leu and Ile at C1.
 
-These preferences are entirely explained by backbone geometry, hydrogen bond
-electrostatics, and macrodipole interactions, requiring no evolutionary narrative. Their
-faithful reproduction across 117,665 helical termini is strong evidence that physical
-chemistry, not selection, determines residue placement at helix termini (Figure 11).
-The Asn N-cap preference is particularly significant: Asn is a prebiotic amino acid,
-and its structural role at N2-N3 would have been expressed in the earliest helical
-peptides as a direct consequence of its side-chain hydrogen bonding capacity.
+These preferences are fully consistent with backbone geometry, hydrogen bond
+electrostatics, and macrodipole interactions. Their faithful reproduction across 117,665
+helical termini suggests that physical chemistry plays a primary role in determining
+residue placement at helix termini, independently of position-specific sequence
+optimization (Figure 11). The Asn N-cap preference is particularly notable: Asn is a
+prebiotic amino acid, and its structural role at N2-N3 is consistent with a preference
+that would have been expressed in early helical peptides as a consequence of its side-chain
+hydrogen bonding capacity.
 
 ---
 
@@ -661,9 +679,9 @@ position-independent Leucine excess is a strong quantitative signature: while th
 evolutionary process has broadly diversified amino acid usage at every structural
 position, it has not erased the Leucine signal even at electrostatic positions (e, g)
 or solvent-exposed positions (b, c, f) where functional specialization would be
-expected to reduce the prebiotic imprint. Together with the hydrophobicity uniformity
-shown in Figure 12, these data establish that prebiotic compositional bias operates
-at all heptad positions, not merely at the hydrophobic core.
+expected to reduce the prebiotic imprint. Together with the hydrophobicity uniformity shown in Figure 12, these data suggest that a
+prebiotic compositional signal is detectable at all heptad positions, not merely at the
+hydrophobic core.
 
 ---
 
@@ -728,13 +746,13 @@ are all prebiotic. The two most depleted residues are Proline (enrichment 0.379;
 log2 ≈ -1.40) and Glycine (0.474; log2 ≈ -1.08), also prebiotic, but mechanistically
 excluded from helical geometry. The lower scatter panel of Figure 20 shows that the
 most enriched residues (blue) sit consistently above the equal-frequency diagonal while
-the most depleted (orange) fall below it. This bifurcation within the prebiotic amino
-acid set, between strongly enriched helix-formers and strongly depleted helix-breakers,
-is the clearest quantitative signature of physical chemistry acting on prebiotic
-substrates, observed here across 90,263 α-helical segments from 7,997 non-redundant
-protein domains. It is mechanistically predictable from first principles and its
-observation at this scale constitutes direct quantitative evidence for the prebiotic
-fossil hypothesis.
+the most depleted (orange) fall below it. This bifurcation within the prebiotic amino acid set, between strongly enriched
+helix-formers and strongly depleted helix-breakers, is the clearest quantitative
+signature of physicochemical constraints on helical composition, observed here across
+90,263 α-helical segments from 7,997 non-redundant protein domains. This pattern is
+mechanistically predictable from backbone geometry alone and its observation at this
+scale is consistent with the hypothesis that a prebiotic compositional bias has been
+retained in modern helical proteins.
 
 ---
 
@@ -846,11 +864,11 @@ annotated structures.
 
 ## 4. General Discussion
 
-The results presented here, derived from 7,997 non-redundant mainly-α protein
-structures comprising 117,665 helical segments and 2,368,790 residues, consistently
-support a model in which the compositional identity of the α-helix is not a product
-of contingent evolution but a physicochemically constrained outcome of the prebiotic
-amino acid inventory. Across every analytical axis examined, the same pattern emerges:
+The results presented here, derived from 7,997 non-redundant mainly-α protein structures
+comprising 117,665 helical segments and 2,368,790 residues, are consistent with a model
+in which the compositional identity of the α-helix retains a detectable signature of
+prebiotic physicochemical constraints that has persisted alongside billions of years of
+evolutionary shaping. Across every analytical axis examined, the same pattern emerges:
 the prebiotic amino acids Alanine and Leucine are systematically overrepresented in
 helical regions, while the prebiotic amino acids Glycine and Proline are systematically
 excluded, in exact correspondence with their known effects on backbone geometry. This
@@ -860,32 +878,33 @@ and 5), heptad position hydrophobicity (Figure 12), Shannon entropy profiles (Fi
 18), cap position preferences (Figure 11), or the global composition landscape
 (Figure 21).
 
-The central insight is that the prebiotic amino acid set was not compositionally neutral
-with respect to secondary structure. It was biased, by the same organic chemistry that
-made these molecules the easiest to synthesize abiotically, toward residues that happen
-to stabilize the α-helical backbone. Alanine's methyl side chain provides the minimum
+A central observation emerging from these data is that the prebiotic amino acid set was
+not compositionally neutral with respect to secondary structure. It was biased, by the
+same organic chemistry that made these molecules the easiest to synthesize abiotically,
+toward residues that stabilize the α-helical backbone. Alanine's methyl side chain provides the minimum
 steric bulk needed to bias the φ/ψ angles toward the helical region of Ramachandran
 space without introducing large van der Waals penalties; its observed propensity of
 1.300 (Figure 2) and proteome enrichment of 1.550 (Figure 20) together make it the
-single strongest helix-former in the dataset. Leucine's isobutyl side chain offers
-maximal hydrophobic packing energy in helical-bundle cores, the very configuration
-that would have been selected at prebiotic membrane interfaces, where hydrophobic
-exclusion from aqueous environments provides a direct, non-Darwinian selection pressure.
+single strongest helix-former in the dataset. Leucine's isobutyl side chain offers maximal hydrophobic packing energy in helical-bundle
+cores, a configuration consistent with physicochemical selection at prebiotic membrane
+interfaces, where hydrophobic exclusion from aqueous environments provides a driving force
+independent of sequence-specific selection.
 The broad distribution of hydrophobic moments (Figure 10) across 90,263 α-helical
 segments, with a notable high-μH tail above 0.40, is consistent with this membrane-
 interface hypothesis.
 
 The bifurcation of prebiotic residues into α-helix builders (A, L, I, V) and
 boundary markers (P, D, S, G) is mechanistically satisfying and is quantified in
-Figures 3 and 5. Proline's enrichment at 3-10 helix positions and helix N-termini
-(Figure 11), Asparagine's dominant role at N2-N3 cap positions (z ≈ +3.07, Figure 11),
-Serine's enrichment at helix boundaries (Figure 5), all are explicable by hydrogen bond
-geometry and backbone flexibility constraints that existed before any genetic code or
-ribosome was present. Figure 17 further shows that 3-10 helices preferentially flank
-shorter α-helices, structurally validating the boundary-setter role of the Pro/Asp/Ser/Gly
-prebiotic subset. This means that the positional grammar of helices, which residues
-appear in the core versus at the termini, was already determined by prebiotic chemistry,
-and the modern protein universe inherited this grammar essentially intact.
+Figures 3 and 5. Proline's enrichment at 3-10 helix positions and helix N-termini (Figure 11),
+Asparagine's dominant role at N2-N3 cap positions (z ≈ +3.07, Figure 11), Serine's
+enrichment at helix boundaries (Figure 5), all are consistent with hydrogen bond geometry
+and backbone flexibility constraints that may have operated in early peptide chemistry
+prior to the establishment of a full genetic code. Figure 17 further shows that 3-10
+helices preferentially flank shorter α-helices, structurally supporting the
+boundary-setter role of the Pro/Asp/Ser/Gly subset. The data suggest that the positional
+grammar of helices, which residues appear in the core versus at the termini, is deeply
+rooted in physicochemical principles, and that modern proteins have preserved this pattern
+across billions of years of evolution.
 
 The codon degeneracy analysis (Figure 19) adds an important second layer to this
 argument. The genetic code, far from randomizing the prebiotic bias, appears to have
@@ -897,16 +916,15 @@ structural importance and codon redundancy, or an independent coincidence arisin
 the chemical accessibility of the corresponding codons, remains an open question. Either
 way, the modern genetic code does not dilute the prebiotic signal; it perpetuates it.
 
-The N-cap and C-cap preferences (Figure 11) provide perhaps the most direct evidence
-for deterministic physicochemical control. The enrichment of Asparagine at N2-N3
-positions (z = +3.07 and +2.61, respectively; Figure 11), reproduced across all 117,665
-helical termini, is not an evolved sequence motif in the conventional sense: it is a
-direct consequence of hydrogen bond geometry at the helix N-terminus, where the first
-two backbone NH groups are unsatisfied and require side-chain H-bond acceptors. Any
-peptide, in any chemical context, that places Asn at these positions gains thermodynamic
-stability simply because physics demands it. These preferences existed before natural
-selection and thus constitute genuine fossils of prebiotic physical chemistry preserved
-in the modern structure database.
+The N-cap and C-cap preferences (Figure 11) provide perhaps the most direct evidence for
+physicochemical control of residue placement at helix termini. The enrichment of
+Asparagine at N2-N3 positions (z = +3.07 and +2.61, respectively; Figure 11), reproduced
+across all 117,665 helical termini, is fully consistent with hydrogen bond geometry at
+the helix N-terminus, where the first two backbone NH groups are unsatisfied and benefit
+from side-chain H-bond acceptors. Any peptide that places Asn at these positions gains
+thermodynamic stability as a direct consequence of backbone geometry. Their conservation
+in the modern structure database is consistent with a pattern rooted in physicochemical
+principles that has been retained and reinforced across deep evolutionary time.
 
 The heptad entropy analysis (Figures 12 and 18) reveals that the compositional space at
 each of the seven heptad positions is occupied near-uniformly (96.3-96.4% of the
@@ -977,13 +995,14 @@ of independent evolutionary lineages on the same helical composition, from therm
 archaea to metazoans to viruses, is quantitatively consistent with a common
 physicochemical constraint operating at the level of amino acid-backbone geometry.
 
-These findings challenge the model of purely contingent protein evolution and support a
-view in which the structural universe of proteins was substantially pre-determined by
-the physical chemistry of the prebiotic world. The α-helix is prevalent not because
-evolution chose it, but because the available building materials were predisposed to
-form it, and the modern protein database retains, quantifiably and reproducibly across
-23 independent analytical figures and across all four domains of life, the chemical
-signature of that predisposition.
+These findings suggest that the structural universe of proteins was substantially shaped
+by the physical chemistry of the prebiotic world, in addition to the evolutionary forces
+that have acted on it since. The data are consistent with a scenario in which available
+prebiotic amino acids were physicochemically predisposed to favor helical conformations,
+and in which this bias has been retained and further reinforced by evolution. The modern
+protein database retains, quantifiably and reproducibly across 23 independent analytical
+figures and across all four domains of life, a compositional signature of these early
+physicochemical preferences.
 
 ---
 
