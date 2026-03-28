@@ -18,7 +18,7 @@
 - ^3 Departamento de Quimica Fundamental, Universidade Federal de Pernambuco, Recife, Brazil
 - ^4 Instituto de Ciencias Biologicas, Universidade de Pernambuco, Recife, Brazil
 
-**Corresponding authors:** Madson A. de Luna-Aragao, [email]; Ana M. Benko-Iseppon, [email]
+**Corresponding authors:** Madson A. de Luna-Aragao, madsondeluna@ufmg.br; Ana M. Benko-Iseppon, ana.iseppon@ufpe.br
 
 ---
 
